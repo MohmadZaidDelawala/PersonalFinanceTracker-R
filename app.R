@@ -20,12 +20,6 @@ library(shinyjs)
 library(blastula)
 
 
-# Database connection settings
-db_user <- "root"
-db_password <- "M.zaid_01" # Replace with your DB password
-db_name <- "personal_finance_tracker"
-db_host <- "localhost"
-
 # Define the main UI structure
 ui <- dashboardPage(
   dashboardHeader(
@@ -118,7 +112,16 @@ ui <- dashboardPage(
 # Define server logic
 server <- function(input, output, session) {
   # Connect to the database
-  con <- dbConnect(RMySQL::MySQL(), user = db_user, password = db_password, dbname = db_name, host = db_host)
+  library(RMySQL)
+  
+  con <- dbConnect(RMySQL::MySQL(),
+                   user = "411691",
+                   password = "M.zaid_01",  # Replace with the password you created
+                   host = "mysql-mohmadzaid.alwaysdata.net",
+                   dbname = "mohmadzaid_personal_finance",
+                   port = 3306
+  )
+  
   
   # Function to add specific columns to existing user-specific bill reminders tables
   add_columns_if_not_exists <- function(user_id, con) {
