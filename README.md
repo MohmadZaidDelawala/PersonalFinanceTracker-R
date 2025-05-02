@@ -78,6 +78,15 @@ A comprehensive personal finance tracking application built using R and Shiny wi
 - Git
 - Shiny packages (see `libraries.R` or below)
 
+### Setup MySQL Database
+
+1. Create a database in MySQL named: `personal_finance_tracker`
+2. Import the schema using this command (from your project root):
+
+```bash
+mysql -u root -p personal_finance_tracker < schema/schema.sql
+
+
 ### Required R Libraries
 
 ```r
