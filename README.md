@@ -5,7 +5,6 @@ A comprehensive personal finance tracking application built using R and Shiny wi
 ---
 
 ## 📸 Screenshots
-## 📸 Screenshots
 
 <table>
   <tr>
