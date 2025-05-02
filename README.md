@@ -10,15 +10,17 @@ _Add screenshots here (e.g. dashboard UI, spending chart, bill reminders table)_
 
 ---
 
-## 🔧 Technologies Used
 
-- **Frontend**: Shiny, shinydashboard, shinydashboardPlus, shinythemes, Plotly, shinyjs
-- **Backend**: R, MySQL, RMySQL
-- **Data Handling**: dplyr, openxlsx, lubridate, jsonlite, sodium
-- **Forecasting**: Prophet
-- **Email Notifications**: blastula
-- **Reporting**: rmarkdown, knitr, tinytex
-- **API**: Exchange Rate API integration
+## 🛠 Technologies Used
+
+| Area        | Tools/Libraries                     |
+|-------------|--------------------------------------|
+| UI          | Shiny, shinydashboard, Plotly        |
+| Backend     | RMySQL, dplyr, sodium                |
+| Forecasting | Prophet, lubridate                   |
+| Reporting   | rmarkdown, openxlsx, knitr           |
+| Alerts      | blastula (email reminders)           |
+| Styling     | shinythemes, custom CSS              |
 
 ---
 
