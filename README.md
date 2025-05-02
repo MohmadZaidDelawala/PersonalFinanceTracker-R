@@ -87,9 +87,8 @@ install.packages(c(
   "knitr", "httr", "jsonlite", "sodium", "lubridate",
   "prophet", "ggplot2", "tinytex", "shinyjs", "blastula"
 ))
-
-
----
+```
+--- 
 
 ## 👤 Author
 
