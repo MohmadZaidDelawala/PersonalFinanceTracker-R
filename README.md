@@ -7,7 +7,7 @@ A comprehensive personal finance tracking application built using R and Shiny wi
 ## 📸 Screenshots
 
 
-### 🖥️ Dashboard Overview
+### 🖥️ Registration Page
 ![Dashboard](https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20160506.png?raw=true)
 
 ### 🔐 Login Page
@@ -16,13 +16,13 @@ A comprehensive personal finance tracking application built using R and Shiny wi
 ### 📊 Forecast Visualization
 ![Forecast](https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20160637.png?raw=true)
 
-### 📈 Spending Charts
+### 📁 Spending Reports
 ![Charts](https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20160738.png?raw=true)
 
-### 💸 Bill Reminders Table
+### 💸 Set Bill Reminders 
 ![Bill Table](https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20161522.png?raw=true)
 
-### 📁 PDF/Excel Export
+### 📁 View Bill Reminder Table
 ![Export](https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20161546.png?raw=true)
 
 
