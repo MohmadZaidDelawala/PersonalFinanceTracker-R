@@ -70,6 +70,7 @@ A comprehensive personal finance tracking application built using R and Shiny wi
 
 ## 📁 Project Structure
 
+```
 PersonalFinanceTracker-R/
 ├── 📄 app.R # Main Shiny app file
 ├── 📄 libraries.R # Installs and loads required R packages
@@ -83,7 +84,7 @@ PersonalFinanceTracker-R/
 │
 ├── 📁 schema/ # 🗃️ MySQL database structure
 │ └── schema.sql # SQL dump (structure only)
-
+```
 ---
 
 ## 🛠 Setup Instructions
