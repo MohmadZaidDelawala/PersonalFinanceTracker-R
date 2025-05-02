@@ -87,3 +87,11 @@ install.packages(c(
   "knitr", "httr", "jsonlite", "sodium", "lubridate",
   "prophet", "ggplot2", "tinytex", "shinyjs", "blastula"
 ))
+
+## 👤 Author
+
+**Mohmadzaid Delawala**  
+📧 Email: patelzaid987@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/mohmadzaid-delawala-a12763222/)  
+🖥️ [GitHub](https://github.com/MohmadZaidDelawala)
+
