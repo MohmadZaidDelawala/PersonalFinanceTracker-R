@@ -85,7 +85,7 @@ A comprehensive personal finance tracking application built using R and Shiny wi
 
 ```bash
 mysql -u root -p personal_finance_tracker < schema/schema.sql
-
+```
 
 ### Required R Libraries
 
