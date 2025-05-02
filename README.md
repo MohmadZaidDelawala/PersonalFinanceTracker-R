@@ -5,26 +5,40 @@ A comprehensive personal finance tracking application built using R and Shiny wi
 ---
 
 ## 📸 Screenshots
+## 📸 Screenshots
 
-
-### 🖥️ Registration Page
-![Dashboard](https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20160506.png?raw=true)
-
-### 🔐 Login Page
-![Login](https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20160522.png?raw=true)
-
-### 📊 Forecast Visualization
-![Forecast](https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20160637.png?raw=true)
-
-### 📁 Spending Reports
-![Charts](https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20160738.png?raw=true)
-
-### 💸 Set Bill Reminders 
-![Bill Table](https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20161522.png?raw=true)
-
-### 📁 View Bill Reminder Table
-![Export](https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20161546.png?raw=true)
-
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20160506.png?raw=true" width="400"/><br/>
+      <sub><b>🖥️ Registration Page</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20160522.png?raw=true" width="400"/><br/>
+      <sub><b>🔐 Login Page</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20160637.png?raw=true" width="400"/><br/>
+      <sub><b>📊 Forecast Visualization</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20160738.png?raw=true" width="400"/><br/>
+      <sub><b>📁 Spending Reports</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20161522.png?raw=true" width="400"/><br/>
+      <sub><b>💸 Set Bill Reminders</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/MohmadZaidDelawala/PersonalFinanceTracker-R/blob/main/screenshot/Screenshot%202025-04-07%20161546.png?raw=true" width="400"/><br/>
+      <sub><b>📁 View Bill Reminder Table</b></sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
