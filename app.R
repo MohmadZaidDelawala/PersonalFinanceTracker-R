@@ -115,12 +115,13 @@ server <- function(input, output, session) {
   library(RMySQL)
   
   con <- dbConnect(RMySQL::MySQL(),
-                   user = "411691",
-                   password = "M.zaid_01",  # Replace with the password you created
-                   host = "mysql-mohmadzaid.alwaysdata.net",
-                   dbname = "mohmadzaid_personal_finance",
-                   port = 3306
+                   user = Sys.getenv("DB_USER"),
+                   password = Sys.getenv("DB_PASSWORD"),
+                   host = Sys.getenv("DB_HOST"),
+                   dbname = Sys.getenv("DB_NAME"),
+                   port = as.integer(Sys.getenv("DB_PORT"))
   )
+  
   
   
   # Function to add specific columns to existing user-specific bill reminders tables
