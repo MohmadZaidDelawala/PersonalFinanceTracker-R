@@ -1,0 +1,130 @@
+---
+title: "Monthly Expense Report"
+output:
+  pdf_document:
+    toc: true
+    number_sections: true
+    latex_engine: xelatex
+params:
+  username: "NA"
+  month: "YYYY-MM"
+  salary: 0
+  goal: 0
+  total_expense: 0
+  remaining: 0
+  transactions: NULL
+   
+  category_plot: NULL
+  date_plot: NULL
+  payment_mode_plot: NULL
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(knitr)
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+```
+
+# User Information
+
+**Username:** `r params$username`  
+**Report Month:** `r params$month`
+
+# Salary & Savings Summary
+
+| Description        | Amount (Rs.)     |
+|--------------------|------------------|
+| Monthly Salary     | `r format(params$salary, big.mark = ",")` |
+| Savings Goal       | `r format(params$goal, big.mark = ",")` |
+| Total Expenses     | `r format(params$total_expense, big.mark = ",")` |
+| Remaining Amount   | `r format(params$remaining, big.mark = ",")` |
+
+\newpage
+
+# Transaction Details
+
+```{r transaction_table}
+if (nrow(params$transactions) == 0) {
+  cat("No transactions found for this month.")
+} else {
+  knitr::kable(params$transactions, format = "pipe", align = "c")
+}
+```
+
+\newpage
+
+# Visualizations
+
+
+## Spending by Category
+
+```{r category_plot, fig.align='center', fig.height=5}
+if (!is.null(params$transactions) && nrow(params$transactions) > 0) {
+  category_summary <- params$transactions %>%
+    group_by(category) %>%
+    summarise(total = sum(amount)) %>%
+    mutate(percent = round(total / sum(total) * 100, 1),
+           label = paste0(category, " (", percent, "%)"))
+
+  ggplot(category_summary, aes(x = "", y = total, fill = label)) +
+    geom_bar(stat = "identity", width = 1) +
+    coord_polar("y") +
+    
+    theme_void() +
+    theme(legend.title = element_blank())
+} else {
+  cat("No category data available.")
+}
+```
+
+\newpage
+
+## Spending by Date
+
+```{r date_plot, fig.align='center', fig.height=5}
+if (!is.null(params$transactions) && nrow(params$transactions) > 0) {
+  date_summary <- params$transactions %>%
+    group_by(date = as.Date(date)) %>%
+    summarise(total = sum(amount))
+
+  ggplot(date_summary, aes(x = date, y = total)) +
+    geom_line(color = "darkgreen", size = 1.2) +
+    geom_point(color = "black") +
+    labs( x = "Date", y = "Total (Rs.)") +
+    theme_minimal()
+} else {
+  cat("No date data available.")
+}
+```
+
+\newpage
+
+## Spending by Payment Mode
+
+```{r payment_mode_plot, fig.align='center', fig.height=5}
+if (!is.null(params$transactions) && nrow(params$transactions) > 0) {
+  mode_summary <- params$transactions %>%
+    group_by(payment_mode) %>%
+    summarise(total = sum(amount))
+
+  ggplot(mode_summary, aes(x = reorder(payment_mode, -total), y = total, fill = payment_mode)) +
+    geom_col(width = 0.6) +
+    labs( x = "Payment Mode", y = "Total (Rs.)") +
+    theme_minimal() +
+    theme(legend.position = "none")
+} else {
+  cat("No payment mode data available.")
+}
+
+```
+
+\newpage
+
+# Notes
+
+- This report includes all expense records and summaries for the selected month only.  
+- Visualizations are generated automatically from the transaction data.
+
+> Report generated on `r Sys.Date()` using *Personal Finance Tracker App*.
