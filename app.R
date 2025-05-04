@@ -1265,7 +1265,7 @@ server <- function(input, output, session) {
       
       # Use the enhanced Rmd
       tempReport <- file.path(tempdir(), "enhanced_expense_report.Rmd")
-      file.copy("C:\\Users\\patel\\Documents\\enhanced_expense_report .Rmd", tempReport, overwrite = TRUE)
+      file.copy("enhanced_expense_report.Rmd", tempReport, overwrite = TRUE)
       
       
       rmarkdown::render(
