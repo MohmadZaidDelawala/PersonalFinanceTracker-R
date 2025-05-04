@@ -122,6 +122,7 @@ install.packages(c(
 ## LIVE DEMO 
 <https://mzaid-2501.shinyapps.io/personalfinancetracker-r/>
 
+---
 ## 👤 Author
 
 **Mohmadzaid Delawala**  
