@@ -73,6 +73,7 @@ A comprehensive personal finance tracking application built using R and Shiny wi
 ```
 PersonalFinanceTracker-R/
 ├── 📄 app.R # Main Shiny app file
+├── 📄 enhanced_expense_report.Rmd # For downloading report in pdf
 ├── 📄 libraries.R # Installs and loads required R packages
 ├── 📄 README.md # Project overview, setup, and screenshots
 ├── 📄 .gitignore # Files/folders to be ignored by Git
